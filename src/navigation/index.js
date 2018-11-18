@@ -36,12 +36,50 @@ const two = () => ({
   },
 })
 
+const three = () => ({
+  stack: {
+    id: 'tab.Three',
+    children: [
+      {
+        component: {
+          id: 'screen.Three',
+          name: 'screen.Three',
+          options: {
+            bottomTab: {
+              text: 'Three',
+            },
+          },
+        },
+      }
+    ],
+  },
+})
+
+const four = () => ({
+  stack: {
+    id: 'tab.Four',
+    children: [
+      {
+        component: {
+          id: 'screen.Four',
+          name: 'screen.Four',
+          options: {
+            bottomTab: {
+              text: 'Four',
+            },
+          },
+        },
+      }
+    ],
+  },
+})
+
 const main = () => ({
   root: {
     sideMenu: {
       left: {
         component: {
-          id: 'navigation.SideMenuScreen',
+          id: 'navigation.SideMenu',
           name: 'screen.SideMenu',
         },
       },
@@ -51,6 +89,8 @@ const main = () => ({
           children: [
             one(),
             two(),
+            three(),
+            four(),
           ],
         },
       },

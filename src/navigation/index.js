@@ -42,7 +42,7 @@ const main = () => ({
       left: {
         component: {
           id: 'navigation.SideMenuScreen',
-          name: 'screen.SideMenuScreen',
+          name: 'screen.SideMenu',
         },
       },
       center: {

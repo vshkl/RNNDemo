@@ -1,6 +1,6 @@
 import { Navigation } from 'react-native-navigation'
 
-import screens from '../screens'
+import screens from 'src/screens'
 
 const components = [
   { name: 'screen.Four', component: () => screens.Four },

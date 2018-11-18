@@ -1,3 +1,15 @@
+const defaultOptions = () => ({
+  statusBar: {
+    style: 'dark',
+    backgroundColor: '#FFFFFF',
+  },
+  bottomTab: {
+    textColor: '#AAAAAA',
+    selectedTextColor: '#000000',
+    fontSize: 16,
+  },
+})
+
 const one = () => ({
   stack: {
     id: 'tab.One',
@@ -99,5 +111,6 @@ const main = () => ({
 })
 
 export default {
+  defaultOptions,
   main,
 }

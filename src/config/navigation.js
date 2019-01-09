@@ -3,11 +3,9 @@ import { Navigation } from 'react-native-navigation'
 import screens from 'src/screens'
 
 const components = [
-  { name: 'screen.Four', component: () => screens.Four },
-  { name: 'screen.One', component: () => screens.One },
-  { name: 'screen.SideMenu', component: () => screens.SideMenu },
-  { name: 'screen.Three', component: () => screens.Three },
-  { name: 'screen.Two', component: () => screens.Two },
+  { name: 'screen.Main', component: () => screens.Main },
+  { name: 'screen.ModalOne', component: () => screens.ModalOne },
+  { name: 'screen.ModalTwo', component: () => screens.ModalTwo },
 ]
 
 const registerScreens = () => {

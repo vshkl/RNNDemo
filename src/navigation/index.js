@@ -1,116 +1,46 @@
-const defaultOptions = () => ({
-  statusBar: {
-    style: 'dark',
-    backgroundColor: '#FFFFFF',
-  },
-  bottomTab: {
-    textColor: '#AAAAAA',
-    selectedTextColor: '#000000',
-    fontSize: 16,
-  },
-})
-
-const one = () => ({
-  stack: {
-    id: 'tab.One',
-    children: [
-      {
-        component: {
-          id: 'screen.One',
-          name: 'screen.One',
-          options: {
-            bottomTab: {
-              text: 'One',
-            },
-          },
-        },
-      }
-    ],
-  },
-})
-
-const two = () => ({
-  stack: {
-    id: 'tab.Two',
-    children: [
-      {
-        component: {
-          id: 'screen.Two',
-          name: 'screen.Two',
-          options: {
-            bottomTab: {
-              text: 'Two',
-            },
-          },
-        },
-      }
-    ],
-  },
-})
-
-const three = () => ({
-  stack: {
-    id: 'tab.Three',
-    children: [
-      {
-        component: {
-          id: 'screen.Three',
-          name: 'screen.Three',
-          options: {
-            bottomTab: {
-              text: 'Three',
-            },
-          },
-        },
-      }
-    ],
-  },
-})
-
-const four = () => ({
-  stack: {
-    id: 'tab.Four',
-    children: [
-      {
-        component: {
-          id: 'screen.Four',
-          name: 'screen.Four',
-          options: {
-            bottomTab: {
-              text: 'Four',
-            },
-          },
-        },
-      }
-    ],
-  },
-})
-
 const main = () => ({
   root: {
-    sideMenu: {
-      left: {
-        component: {
-          id: 'navigation.SideMenu',
-          name: 'screen.SideMenu',
-        },
-      },
-      center: {
-        bottomTabs: {
-          id: 'BottomTabs',
-          children: [
-            one(),
-            two(),
-            three(),
-            four(),
-          ],
-        },
-      },
+    stack: {
+      children: [
+        {
+          component: {
+            id: 'screen.Main',
+            name: 'screen.Main',
+          },
+        }
+      ],
     },
   },
 })
 
+const modalOne = () => ({
+  stack: {
+    children: [
+      {
+        component: {
+          id: 'screen.ModalOne',
+          name: 'screen.ModalOne',
+        },
+      }
+    ],
+  },
+})
+
+const modalTwo = () => ({
+  stack: {
+    children: [
+      {
+        component: {
+          id: 'screen.ModalTwo',
+          name: 'screen.ModalTwo',
+        },
+      }
+    ],
+  },
+})
+
 export default {
-  defaultOptions,
   main,
+  modalOne,
+  modalTwo,
 }
